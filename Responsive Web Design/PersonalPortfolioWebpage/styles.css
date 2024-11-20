@@ -1,0 +1,269 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */ // for dev purpose to see the layout
+}
+
+:root {
+  --theme-color-red: #be3144;
+  --theme-color-white: white;
+  --work-item-name: #303841;
+  --default-font-color: #f0f0f0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 110%;
+  color: var(--default-font-color);
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar {
+  width: 100%;
+  background-color: var(--theme-color-red);
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 1rem;
+  position: fixed;
+  z-index: 3;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.nav-link {
+  color: var(--theme-color-white);
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+main {
+  width: 100%;
+  background-color: yellow;
+  place-items: center;
+}
+
+#welcome-section {
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding: 1 rem;
+  height: 100vh;
+  background-color: var(--work-item-name);
+  justify-content: center;
+}
+
+#text_my_name,
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+  color: var(--theme-color-white);
+  font-family: Raleway, sans-serif;
+}
+
+#text_my_profession {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--theme-color-red);
+  padding: 0;
+  margin: 0;
+}
+
+#projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1rem;
+  background-color: #45567d;
+  align-items: center;
+}
+
+#text-work-section-tile {
+  min-width: 500px;
+  font-weight: 900;
+  font-size: xx-large;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+  color: var(--theme-color-white);
+  margin: 0;
+  border-bottom: 1px solid var(--theme-color-white);
+}
+
+#work-list {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-tile {
+  width: 100%;
+  background-color: aqua;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0 0 3px 3px;
+  min-height: 400px;
+  aspect-ratio: 3 / 3.5;
+}
+
+.project-tile:hover {
+  cursor: pointer;
+}
+
+.img-work-item-preview {
+  width: 100%;
+  height: 85%;
+  src: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg");
+  object-fit: cover;
+  position: absolute;
+}
+
+.text-work-item-name {
+  position: absolute;
+  min-height: 15%;
+  background: var(--work-item-name);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+  padding: 0.5rem;
+  width: 100%;
+  bottom: 0;
+  color: var(--theme-color-white);
+  margin: auto;
+}
+
+.before,
+.after {
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.2s ease-in-out; /* Smooth transition effect */
+  margin: 0 0.5rem; /* Adds some space between text and spans */
+  color: darkorange;
+}
+
+.text-work-item-name:hover .before,
+.text-work-item-name:hover .after {
+  opacity: 1; /* Make visible on hover */
+}
+
+#btn-show-all {
+  margin-top: 3rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  width: fit-content;
+  color: var(--theme-color-white);
+  background-color: var(--work-item-name);
+  border-radius: 3px;
+}
+
+#btn-show-all:hover {
+  background-color: var(--theme-color-red);
+  cursor: pointer;
+}
+
+#contact-section {
+  background-color: var(--work-item-name);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#lets-work-together {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  color: var(--theme-color-white);
+}
+
+#lets-work-together h1 {
+  margin: 0;
+  text-align: center;
+}
+
+#lets-work-together p {
+  margin-top: 0.5rem;
+  font-style: italic;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+#profile-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: var(--theme-color-white);
+  text-align: center;
+  margin: 0;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.contact-link:hover {
+  transform: translateY(8px);
+}
+
+.contact-icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+footer {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-evenly;
+  gap: 2rem;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  color: var(--theme-color-white);
+  background-color: var(--work-item-name);
+  border-top: 3px solid var(--theme-color-red);
+}
+
+@media only screen and (max-width: 1000px) {
+  #work-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #work-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

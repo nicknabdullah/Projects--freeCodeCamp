@@ -73,3 +73,8 @@ numberInput.addEventListener("keydown", (e) => {
     checkUserInput();
   }
 });
+
+// Clear output when user starts typing
+numberInput.addEventListener("input", () => {
+  output.style.display = "none";
+});

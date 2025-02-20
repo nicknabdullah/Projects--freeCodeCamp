@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background: linear-gradient(teal, lightblue, white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+
+input:focus {
+    outline: 1px solid teal;
+}
+
+button {
+    width: 75px;
+    padding: 10px;
+    margin: 10px 5px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#check-btn {
+    border: 1px solid teal;
+}
+
+#clear-btn {
+    border: 1px solid lightcoral;
+}
+
+#results-div {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.valid {
+    color: teal;
+}
+
+.invalid {
+    color: lightcoral;
+}

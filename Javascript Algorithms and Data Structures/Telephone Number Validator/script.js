@@ -76,7 +76,7 @@ checkBtn.addEventListener('click', function () {
     const isValidNumber = checkValidPhoneNumber(phoneNumber);
 
     // append the error message in the output element
-    showResult(phoneNumber, isValidNumber)
+    showResult(false, phoneNumber, isValidNumber)
 });
 
 // add an event listener for when the user clicks the button

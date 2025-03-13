@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Search</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <header>
+        <img id="header-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png"
+            alt="FreeCodeCamp Logo" />
+        <h1 id="title">Pokèmon Search</h1>
+    </header>
+
+    <main>
+        <form id="search-form">
+            <label for="search-input">Search for a Pokèmon Name or ID</label>
+            <div id="search-container">
+                <input type="text" id="search-input" required/>
+                <button id="search-button" type="submit">Search</button>
+            </div>
+        </form>
+            
+        <div id="pokemon-info">
+            <div id="top-container">
+                <div id="name-and-id">
+                    <span id="pokemon-name"></span>
+                    <span id="pokemon-id"></span>
+                </div>
+                <div id="size">
+                    <span id="weight"></span>
+                    <span id="height"></span>
+                </div>
+                <div id="sprite-container">
+                    <img id="sprite">
+                </div>
+                <div id="types"></div>
+            </div>
+
+            <div id="bottom-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="base-column">Base</th>
+                            <th class="stats-column">Stats</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pokemon-table">
+                        <tr>
+                            <td class="base-column">HP:</td>
+                            <td id="hp" class="stats-column">...</td>
+                        </tr>
+                        <tr>
+                            <td class="base-column">Attack:</td>
+                            <td id="attack" class="stats-column">...</td>
+                        </tr>
+                        <tr>
+                            <td class="base-column">Defense:</td>
+                            <td id="defense" class="stats-column">...</td>
+                        </tr>
+                        <tr>
+                            <td  class="base-column">Sp. Attack:</td>
+                            <td id="special-attack" class="stats-column">...</td>
+                        </tr>
+                        <tr>
+                            <td class="base-column">Sp. Defense:</td>
+                            <td id="special-defense" class="stats-column">...</td>
+                        </tr>
+                        <tr>
+                            <td class="base-column">Speed:</td>
+                            <td id="speed" class="stats-column">...</td>
+                        </tr>
+                </table>
+            </div>
+            <script src="./script.js"></script>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cash Register Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1>freeCodeCamp(🔥)</h1>
+  <h2>Cash Register Project</h2>
+
+  <div id="change-due"></div>
+
+  <div class="input-section">
+    <label for="cash">Enter cash from customer:</label>
+    <input type="number" id="cash" step="0.01" />
+    <button id="purchase-btn">Purchase</button>
+  </div>
+
+  <div class="cash-register">
+    <div class="screen">
+      <p id="price">Total: </p>
+    </div>
+    <div class="neck"></div>
+    <div class="drawer-container">
+      <div class="drawer">
+        <p><strong>Change in drawer:</strong></p>
+        <p id="PENNY">Pennies: </p>
+        <p id="NICKEL">Nickels: </p>
+        <p id="DIME">Dimes: </p>
+        <p id="QUARTER">Quarters: </p>
+        <p id="ONE">Ones: </p>
+        <p id="FIVE">Fives: </p>
+        <p id="TEN">Tens: </p>
+        <p id="TWENTY">Twenties: </p>
+        <p id="ONE HUNDRED">Hundreds: </p>
+      </div>
+      <div class="keys">
+        <div class="key"></div>
+        <div class="key"></div>
+        <div class="key"></div>
+        <div class="key"></div>
+        <div class="key"></div>
+        <div class="key"></div>
+        <div class="key"></div>
+        <div class="key"></div>
+        <div class="key"></div>
+      </div>
+    </div>
+    <div class="base">
+      <div class="drawer-handle"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

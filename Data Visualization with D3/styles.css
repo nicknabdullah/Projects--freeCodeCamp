@@ -1,0 +1,34 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+svg {
+    background-color: pink;
+}
+
+#chart {
+    margin: auto;
+}
+
+/* Bar Styles */
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: orange;
+}
+
+/* Tooltip Styles */
+#tooltip {
+    position: absolute;
+    visibility: hidden;
+    padding: 8px;
+    background: green;
+    color: #fff;
+    pointer-events: none;
+    font-size: 12px;
+    border-radius: 4px;
+}

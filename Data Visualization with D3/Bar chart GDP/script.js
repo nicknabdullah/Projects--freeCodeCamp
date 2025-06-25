@@ -45,6 +45,24 @@ d3.json(url).then(data => {
         .attr('transform', `translate(${padding}, 0)`)
         .call(yAxis);
 
+    // Add y-axis label
+    svg.append('text')
+        .attr('x', -padding)
+        .attr('y', padding + 10)
+        .attr('transform', 'rotate(-90)')
+        .attr('text-anchor', 'end')
+        .attr('dy', '1em')
+        .attr('class', 'y-label')
+        .text('Gross domestic product');
+
+    // Add x-axis label
+    svg.append('text')
+        .attr('x', width / 2)
+        .attr('y', height - padding + 40)
+        .attr('text-anchor', 'middle')
+        .attr('class', 'x-label')
+        .text('Year');
+
     // Bar width calculation
     const barWidth = (width - 2 * padding) / gdpData.length - 1;
 

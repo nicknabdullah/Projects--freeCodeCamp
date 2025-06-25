@@ -1,7 +1,6 @@
 # Salon Appointment Scheduler
 
 A bash script that manages appointments for a salon using PostgreSQL database.
-Project: https://www.freecodecamp.org/learn/relational-database/build-a-salon-appointment-scheduler-project/build-a-salon-appointment-scheduler
 
 ## Description
 
@@ -47,6 +46,10 @@ The database includes tables for:
 -   Customers
 -   Services
 -   Appointments
+
+## Reference
+
+[freeCodeCamp - Build a Salon Appointment Scheduler](https://www.freecodecamp.org/learn/relational-database/build-a-salon-appointment-scheduler-project/build-a-salon-appointment-scheduler)
 
 ## License
 

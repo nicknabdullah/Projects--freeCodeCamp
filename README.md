@@ -41,3 +41,13 @@ Self completed projects from freeCodeCamp [curriculum](https://www.freecodecamp.
 | Drum Machine          | React, JavaScript | pending    |
 | JavaScript Calculator | React, JavaScript | pending    |
 | 25 + 5 Clock          | React, JavaScript | pending    |
+
+## 📊 Data Visualization with D3
+
+| Project           | Tech            | Source URL                                   |
+| ----------------- | --------------- | -------------------------------------------- |
+| Bar Chart         | D3.js, HTML CSS | [View project](https://tinyurl.com/24kbxj7z) |
+| Scatterplot Graph | D3.js, HTML CSS | [View project](https://tinyurl.com/2cm7xt9x) |
+| Heat Map          | D3.js, HTML CSS | pending                                      |
+| Choropleth Map    | D3.js, HTML CSS | pending                                      |
+| Treemap Diagram   | D3.js, HTML CSS | pending                                      |

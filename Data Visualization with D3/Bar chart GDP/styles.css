@@ -1,6 +1,14 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#title {
+    font-size: 24px;
+    margin: 20px auto;
+    width: 800px;
+    display: block;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -12,7 +20,6 @@ svg {
     margin: auto;
 }
 
-/* Bar Styles */
 .bar {
     fill: steelblue;
 }
@@ -21,13 +28,12 @@ svg {
     fill: orange;
 }
 
-/* Tooltip Styles */
 #tooltip {
     position: absolute;
     visibility: hidden;
     padding: 8px;
-    background: green;
-    color: #fff;
+    background: lightcyan;
+    color: black;
     pointer-events: none;
     font-size: 12px;
     border-radius: 4px;

@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
 
-// your first API endpoint...
+// handling API endpoint...
 app.get('/api/whoami', function (req, res) {
   // get the user's IP address
   var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
@@ -22,7 +22,7 @@ app.get('/api/whoami', function (req, res) {
   res.json({ ipaddress: ip, language: language, software: software });
 });
 
-// listen for requests :)
+// listening on port 3000
 var listener = app.listen(process.env.PORT || 3000, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });

@@ -17,7 +17,7 @@ This project is a solution to the [freeCodeCamp - Visualize Data with a Bar Char
 
 ## Usage
 
-1. Clone or download this repository.
+1. Download this folder.
 2. Open `index.html` in your browser.
 
 ## Project Reference

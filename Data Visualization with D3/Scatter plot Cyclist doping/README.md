@@ -17,7 +17,7 @@ The cyclist data is loaded from the following endpoint:
 
 ## Getting Started
 
-1. Clone the repository.
+1. Download the folder.
 2. Open `index.html` in your browser.
 
 ## Project Reference

@@ -1,8 +1,7 @@
 # Exercise Tracker
 
-This is Exercise Tracker project based on:
-
-[freeCodeCamp - Exercise Tracker Project](https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/exercise-tracker).
+Exercise Tracker project based on:
+[freeCodeCamp - Exercise Tracker Project](https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/exercise-tracker)
 
 ## Tech
 
@@ -25,13 +24,15 @@ This is Exercise Tracker project based on:
     cd boilerplate-project-exercisetracker
     ```
 
-3. **Install dependencies**
+3. Add **.env** file with MONGO_URI for database connection.
+
+4. **Install dependencies**
 
     ```bash
     npm install
     ```
 
-4. **Start the server**
+5. **Start the server**
 
     ```bash
     npm start

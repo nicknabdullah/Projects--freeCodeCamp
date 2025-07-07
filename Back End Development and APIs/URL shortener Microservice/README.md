@@ -8,17 +8,18 @@ A simple microservice that shortens URLs, built as part of the **freeCodeCamp - 
 
 ## How to Use
 
-1. **Download the folder** containing the project files to your local machine.
+1. Download the folder to your local machine.
 2. Open a terminal in the project directory.
 3. Install dependencies:
     ```bash
     npm install
     ```
-4. Start the server:
+4. Add **.env** file with MONGO_URI for database connection.
+5. Start the server:
     ```bash
     npm start
     ```
-5. The service will be running locally (default: `http://localhost:3000`).
+6. The service will be running locally (default: `http://localhost:3000`).
 
 ## API Usage
 

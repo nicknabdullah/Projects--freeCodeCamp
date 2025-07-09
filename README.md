@@ -40,7 +40,7 @@ Self completed projects from freeCodeCamp [curriculum](https://www.freecodecamp.
 | Header Parser Microservice | Node.js, Express          | Extracts IP address, language, and software from request headers.        | [View](https://tinyurl.com/ysalwl8o) |
 | URL Shortener Microservice | Node.js, Express, MongoDB | Shortens long URLs and redirects users using a database of URL mappings. | [View](https://tinyurl.com/yuj77uyz) |
 | Exercise Tracker           | Node.js, Express, MongoDB | Logs user exercises and retrieves them with filters like date and limit. | [View](https://tinyurl.com/ypw4sno8) |
-| File Metadata Microservice | Node.js, Express, MongoDB | Accepts a file upload and returns its name, type, and size as metadata.  | todo                                 |
+| File Metadata Microservice | Node.js, Express, Multer  | Accepts a file upload and returns its name, type, and size as metadata.  | [View](https://tinyurl.com/ymetqok9) |
 
 ## 📊 Data Visualization - D3.js
 

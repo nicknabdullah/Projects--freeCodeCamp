@@ -45,3 +45,7 @@ A simple microservice that shortens URLs, built as part of the **freeCodeCamp - 
     { "original_url": "https://freecodecamp.org", "short_url": 1 }
     ```
 3. Visit `http://localhost:3000/api/shorturl/1` to be redirected to the original URL.
+
+## License
+
+This project is for educational purposes as part of the freeCodeCamp curriculum.
